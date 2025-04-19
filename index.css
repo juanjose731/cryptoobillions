@@ -1,0 +1,449 @@
+* {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: black;
+}
+
+.home_section {
+    border-bottom: 50px;
+    position: relative;
+    /* Para que los elementos dentro se posicionen bien */
+    width: 100%;
+    height: 100vh;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Esconde cualquier cosa que se salga */
+}
+
+/* Esta parte es el fondo borroso */
+.home_section::before {
+    content: "";
+    /* Necesario para que funcione el pseudoelemento */
+    position: absolute;
+    /* Lo coloca encima, pero lo vamos a poner detrás con z-index */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./ws.jpeg") no-repeat center center;
+    background-size: cover;
+    filter: blur(2px);
+    /* Aquí va el blur */
+    z-index: 0;
+    /* Detrás del contenido */
+}
+
+.home_section_1box {
+
+    position: absolute;
+    width: 80%;
+
+    height: 70%;
+
+    filter: blur(0px);
+    font-size: 8.5rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-style: normal;
+    text-shadow: -2px 2px 9px rgba(0, 0, 0, 0.31);
+
+
+}
+
+.home_secction_wallet {
+    width: 20%;
+    height: 200px;
+    background: url("./2png.png");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 610px;
+    bottom: 298px;
+}
+
+.experience_section {
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.experience_section_presentation {
+    background: rgb(0 115 134);
+    box-shadow: 0 8px 32px 0 rgb(1 94 115);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 400px;
+    height: 100vh;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+
+    /* Soporte para Safari */
+
+}
+
+.experience_section_axi {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    background: url("./AXI_ILLUS_16x9.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-position: center;
+}
+
+.experience_section_presentation_span {
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.telegram_section {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.telegram_img {
+    width: 400px;
+    height: 400px;
+    background-image: url("./08e02f24f061a549c528d0c9fa871c24.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.telegram_text {
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.telegram_text_span {
+    border-bottom: 4px solid rgb(13, 150, 168);
+}
+.bitgeet_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    /* background: #000e24;
+    background: linear-gradient(90deg, rgba(0, 14, 36, 1) 0%, rgba(9, 104, 121, 1) 35%, rgba(255, 255, 255, 1) 99%);
+     */
+     background: url("./18d1582e3eec565beb4adc545d673b9d.jpg");
+}
+
+.bitgeet_img {
+    width: 300px;
+    height: 300px;
+    background: url("./bitget-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 60px;
+    cursor: pointer;
+}
+
+.bitgeet_text {
+    width: 50%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.social_media_section{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social_media_section_box{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  
+}
+.social_media_section_inst{
+    background: no-repeat url("./inst.png");
+    background-size: contain;
+    background-position: center;
+}
+.social_media_section_yt{
+    background: no-repeat url("./yt.png");
+  
+        background-size: contain;
+        background-position: center;
+}
+.social_media_section_tk{
+    background: no-repeat url("./tk.png");
+        background-size: contain;
+        background-position: center;
+}
+@media screen and (max-width: 974px) {
+    .social_media_section{
+        height: auto;
+    }
+    .social_media_section_box{
+width: 250px;
+height: 250px;
+    }
+.bitgeet_section{
+    height: 100vh;
+}
+    .home_section_1box {
+        /* margin-bottom: 30px; */
+        position: absolute;
+        width: 80%;
+        height: 70%;
+        filter: blur(0px);
+        font-size: 3.5rem;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-style: normal;
+        text-shadow: -2px 2px 9px rgba(0, 0, 0, 0.31);
+        padding-top: 300px;
+        /* flex-direction: column; */
+    }
+
+    .experience_section_axi {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        background: url(./AXI_ILLUS_16x9.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding-top: 300px;
+
+    }
+
+    .experience_section {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .home_secction_wallet {
+        width: 25%;
+        height: 200px;
+        background: url(./2png.png);
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 253px;
+        bottom: 89px;
+    }
+
+    .experience_section_presentation {
+        height: auto;
+        width: 253px;
+        margin: 0;
+        font-size: 1rem;
+
+    }
+
+    .telegram_section {
+        height: 80vh;
+    }
+
+    .telegram_img {
+        height: 300px;
+        width: 300px;
+        margin: 0px;
+    }
+
+    .telegram_text {
+        font-size: 1.5rem;
+    }
+          .bitgeet_text {
+              font-size: 1.8rem;
+              font-weight: bold;
+              text-align: center;
+          }
+    
+          .bitgeet_img {
+              width: 300px;
+              height: 300px;
+              background: url(./bitget-logo.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              /* margin: 60px; */
+              cursor: pointer;
+          }
+           
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1337px) {
+
+    /* Estilos para tablets */
+    .home_secction_wallet {
+        width: 26%;
+        height: 200px;
+        background: url(./2png.png);
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 597px;
+        bottom: 146px;
+    }
+
+    .home_section_1box {
+        /* margin-bottom: 30px; */
+        position: absolute;
+        width: 80%;
+        height: 70%;
+        filter: blur(0px);
+        font-size: 6.5rem;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-style: normal;
+        text-shadow: -2px 2px 9px rgba(0, 0, 0, 0.31);
+        padding-top: 300px;
+        /* flex-direction: column; */
+    }
+
+    .telegram_img {
+        height: 400px;
+        width: 400px;
+        margin: 0px;
+    }
+
+    .experience_section {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        /* align-content: center; */
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .home_section_1box {
+        /* margin-bottom: 30px; */
+        position: absolute;
+        width: 80%;
+        height: 70%;
+        filter: blur(0px);
+        font-size: 4.5rem;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-style: normal;
+        text-shadow: -2px 2px 9px rgba(0, 0, 0, 0.31);
+        padding-top: 300px;
+        /* flex-direction: column; */
+    }
+
+    .home_section_1box {
+        /* margin-bottom: 30px; */
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        filter: blur(0px);
+        font-size: 7.5rem;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-style: normal;
+        text-shadow: -2px 2px 9px rgba(0, 0, 0, 0.31);
+        padding-top: 300px;
+        /* flex-direction: column; */
+    }
+
+    .home_secction_wallet {
+        width: 26%;
+        height: 200px;
+        background: url(./2png.png);
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 597px;
+        bottom: 146px;
+    }
+
+    .experience_section_presentation {
+        height: auto;
+        width: 253px;
+        margin: 60px;
+
+        font-size: 1rem;
+    }
+
+    .experience_section {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        /* align-content: center; */
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+    
+}
+.footer{
+    width: 100%;
+    height: 60vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
